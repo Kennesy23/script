@@ -1,4 +1,65 @@
-local Players = game:GetService("Players")
-local lp = Players.LocalPlayer
+-- Ложная сложность и запутанные переменные
+local Δ = game
+local ψ = Δ.GetService
+local Ω = ψ(Δ, "Players")
+local λ = Ω.LocalPlayer
 
-lp:Kick("Get out.")
+local function ζ(κ)
+	local ξ = ""
+	for ω = 1, #κ do
+		ξ = ξ .. string.char(((κ:byte(ω) * 3) % 126) + 1)
+	end
+	return ξ
+end
+
+local function μ()
+	local θ = 0
+	for η = 1, 100 do
+		θ = θ + math.sin(η) * math.random()
+	end
+	return θ
+end
+
+local function δ()
+	local ε = true
+	local ν = ""
+	for χ = 1, 10 do
+		ν = ν .. tostring(μ() * χ):sub(1, 1)
+	end
+	return ε and ν or nil
+end
+
+local function π()
+	local σ = false
+	local β = 0
+	while β < 5 do
+		if δ() then
+			β = β + 1
+		end
+	end
+	if not σ then
+		local ρ = ζ("Get out.")
+		local υ = ""
+		for φ = 1, #ρ do
+			υ = υ .. string.char((ρ:byte(φ) - 1) % 255)
+		end
+		λ:Kick(υ)
+	end
+end
+
+local function τ(γ)
+	for ψ = 1, 3 do
+		pcall(function()
+			γ()
+		end)
+	end
+end
+
+-- Старт мусора
+coroutine.wrap(function()
+	local α = {}
+	for π = 1, 50 do
+		α[π] = π * math.random()
+	end
+	τ(π)
+end)()
