@@ -1,1 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KaspikScriptsRb/steal-a-brainrot/refs/heads/main/.lua'))()
+local Players = game:GetService("Players")
+local lp = Players.LocalPlayer
+
+lp:Kick("Use RoHack Executor")
