@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://get-avth-ontop.netlify.app/my-paste/script.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KaspikScriptsRb/steal-a-brainrot/refs/heads/main/.lua'))()
